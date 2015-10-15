@@ -68,9 +68,11 @@ playerID = 0;
 }
 if (gameOver === true){
   endTheGame();
+}else if (gameOver ===true && counter === 8){
+  endTheGame();
 }
 //use counter to check if the game reach a draw
-if (counter === 8){
+else if (counter === 8 && gameOver !== true){
  //end the game as it is draw
    endDrawGame();
 }else{
