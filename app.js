@@ -5,6 +5,7 @@ var playerID = 0;
 var gameOver =false;
 var counter = 0;
 var playerName = ['',''];
+var winnerCounter = [0,0];
 //get the button objects in dom
 var $btn1 = $('#1');
 var $btn2 = $('#2');
@@ -28,6 +29,11 @@ var initialGame = function(){
 for (var i = 1; i < 10; i++){
   $("#"+i).html(' ');
   }
+  //assign wining counts to two boxes
+$("#p1Count").html(winnerCounter[0]);
+$("#p1Count").css('font-size','30px');
+$("#p2Count").html(winnerCounter[1]);
+$("#p2Count").css('font-size','30px');
 }
 
 //load game initialization when the window loaded
@@ -99,13 +105,20 @@ $("#name1").html(playerName[0]);
 $("#name1").css('font-size','30px');
 $("#name2").html(playerName[1]);
 $("#name2").css('font-size','30px');
+//assign wining counts to two boxes
+$("#p1Count").html(winnerCounter[0]);
+$("#p1Count").css('font-size','30px');
+$("#p2Count").html(winnerCounter[1]);
+$("#p2Count").css('font-size','30px');
   //close the popup
   $(".form").fadeToggle();
   $(".form").css({"display":"none"});
   $('#start').css({"display":"none"});
+    winnerCounter = [0,0];
   //initiate the game
   initialGame();
 });
+
 //button click event handler
 $btn1.on('click',playGame);
 $btn2.on('click',playGame);
@@ -125,8 +138,10 @@ var endTheGame = function(){
    }
  if (playerID === 1){
     $("#p1Border").css('border-color','#3366CC ');
+    winnerCounter[0] ++;
     }else{
     $("#p2Border").css('border-color','#3366CC ');
+    winnerCounter[1] ++;
   }
 
   //pop up the winning message, make an reset button
