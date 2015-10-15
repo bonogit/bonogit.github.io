@@ -1,0 +1,217 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 5px;
+  background: rgba(0,0,0,.2);
+} 
+.header {
+background-color: gray;
+height: 30%;
+padding: 3px;
+border-radius: 30%;
+}
+#p1 {
+  width: 30%;
+  display: inline-block;
+}
+.header h1{
+  width: 38%;
+   display: inline-block;
+   text-align: center;
+}
+#p2{
+  width: 30%;
+   display: inline-block;
+}
+.container{
+  text-align: center;
+  padding: 10px;
+}
+.container button {
+  width: 150px;
+  height: 150px;
+/*  useful when the block is not the same size vertically*/
+  vertical-align: top;
+  border: 8px;
+border-color: rgba(0,0,0,.2);
+border-style: solid;
+}
+.container button:hover{
+  background-color: #C8C8C8;
+}
+#start{
+  text-align: center;
+  width: 100px;
+  height: 60px;
+   background-color:grey;
+   border-radius:10%;
+   border:1px solid #424242;
+   /*box-shadow:0px 0px 10px 0px grey;*/
+   cursor:pointer;
+   margin-left: 47%;
+}
+#start button{
+  height: 99%;
+  width: 99%;
+  background-color: transparent;
+}
+.row1{
+  display: block;
+  margin-top: 10px;
+}
+.row2{
+  display: block;
+}
+.row3{
+  display: block;
+}
+#playerOne {
+  float: left;
+  margin-left: 5%;
+  border-color: red;
+  width: 20%;
+  height: 80%;
+  display: block;
+}
+#playerTwo {
+  float: right;
+  border-color: red;
+  width: 20%;
+  height: 80%;
+  display: block;
+}
+.displayBtn {
+  border-radius: 10%;
+  width: 80px;
+  height: 80px;
+  border-color: rgba(0,0,0,.2);
+border-style: solid;
+font-size: 35px;
+}
+.form {
+  display: none;
+  border-radius:2px;
+  padding:20px 30px;
+  box-shadow:0 0 15px;
+  font-size:14px;
+  font-weight:bold;
+  width:40%;
+  left: 25%;
+  top: 30%;
+  margin:20px 250px 0 35px;
+  font-family: helvetica;
+  position: fixed;
+}
+.form .inputs{
+  width: 70%;
+}
+.subBtn {
+  width: 30%;
+
+}
+
+#popup_box
+{
+   display:none;
+   width:40%;
+   background-color:#BDBDBD;
+   position:fixed;
+   left:30%;
+   top:30%;
+   border-radius:10px;
+   border:2px solid grey;
+   box-shadow:0px 0px 10px 0px grey;
+   font-family:helvetica;
+}
+#popup_box #reset_button
+{
+   
+   margin-top:4px;
+   margin-bottom:4px;
+   margin-right:5px;
+   background-color:grey;
+   border:none;
+   color:white;
+   padding:5px;
+   border-radius:1000px;
+   width:100px;
+   border:1px solid #424242;
+   box-shadow:0px 0px 10px 0px grey;
+   cursor:pointer;
+}
+#popup_box #info_text
+{
+   padding:10px;
+   clear:both;
+   background-color:white;
+   color:#6E6E6E;
+}
+#popup_box #cancel_button{
+   float: right;
+   margin:0px;
+   padding:0px;
+   width:70px;
+   height:30px;
+   line-height:30px;
+   font-size:16px;
+   background-color:grey;
+   color:white;
+   border:none;
+   margin-bottom:10px;
+   border-radius:2px;
+   cursor:pointer;
+}
+
+/*another box*/
+
+#draw_popup_box
+{
+ visibility:hidden;
+   display:none;
+   width:40%;
+   background-color:#BDBDBD;
+   position:fixed;
+   left:30%;
+   top:30%;
+   border-radius:10px;
+   border:2px solid grey;
+   box-shadow:0px 0px 10px 0px grey;
+   font-family:helvetica;
+}
+#draw_popup_box #draw_reset_button
+{
+   
+   margin-top:4px;
+   margin-bottom:4px;
+   margin-right:5px;
+   background-color:grey;
+   border:none;
+   color:white;
+   padding:5px;
+   border-radius:1000px;
+   width:100px;
+   border:1px solid #424242;
+   box-shadow:0px 0px 10px 0px grey;
+   cursor:pointer;
+}
+#draw_popup_box #draw_info_text
+{
+   padding:10px;
+   clear:both;
+   background-color:white;
+   color:#6E6E6E;
+}
+#draw_popup_box #draw_cancel_button{
+   float: right;
+   margin:0px;
+   padding:0px;
+   width:70px;
+   height:30px;
+   line-height:30px;
+   font-size:16px;
+   background-color:grey;
+   color:white;
+   border:none;
+   margin-bottom:10px;
+   border-radius:2px;
+   cursor:pointer;
+}

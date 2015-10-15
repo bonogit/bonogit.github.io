@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+<div class="header">
+  <div id="p1"></div>
+  <h1>The Tic Tac Toe Challenge</h1>
+  <div id="p2"></div>
+</div>
+<div class="container">
+<div class="row1">
+  <button data-index="1" id="1"> </button><button data-index="2" id="2"> </button><button data-index="3" id="3"> </button> 
+</div>
+<div class="row2">
+  <button data-index="4" id="4" > </button><button data-index="5" id="5"> </button><button data-index="6" id="6"> </button> 
+</div>
+<div class="row3">
+  <button data-index="7" id="7"></button><button data-index="8" id="8"></button><button data-index="9" id="9"></button> 
+</div>
+</div>
+<div id="playerOne">  
+<button class="displayBtn" id="p1Border">O</button><br>
+PLAYER NAME:
+<div id="name1"></div>
+</div> 
+<div id="playerTwo">
+<button class="displayBtn" id="p2Border">X</button><br>
+PLAYER NAME:
+<div id="name2"></div>
+</div>
+<div id="start"><button id="gameOn">GAME ON</button></div>
+
+<center>
+  <div id="popup_box">
+<input type="button" id="cancel_button" value="X">
+<p id="info_text"> A PLAYER! CLICK "PLAY AGAIN" FOR ANOTHER TRY.
+</p>
+<input type="button" id="reset_button" value="PLAY AGAIN">
+  </div>
+</center>
+
+<center>
+  <div id="draw_popup_box">
+<input type="button" id="draw_cancel_button" value="X">
+<p id="draw_info_text"> GAME DRAW! CLICK "PLAY AGAIN" FOR ANOTHER TRY.
+</p>
+<input type="button" id="draw_reset_button" value="PLAY AGAIN">
+  </div>
+</center>
+
+<center>
+<div id="start_box">
+<form class="form" action="#" id="login">
+<h3>Player Login </h3>
+<hr/><br/>
+<label>Player One Name : </label>
+<br/>
+<input class="inputs" type="text" id="p1Name" placeholder="your name"/><br/>
+<br/>
+<label>Player Two Name : </label>
+<br/>
+<input class="inputs" type="text" id="p2Name" placeholder="your name"/><br/>
+<br/>
+<input type="button" id="subBtn" value="SUBMIT"/>
+<br/>
+
+</form>
+
+</div>
+</center>
+
+<script src="app.js"></script>
+</body>
+</html>
