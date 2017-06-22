@@ -1,4 +1,4 @@
-# bonogit.github.io
+# ttt.github.io
 project Tic Tak Toe
 <p1>General Description</p1>
 <ul>
